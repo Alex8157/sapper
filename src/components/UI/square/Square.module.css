@@ -1,0 +1,69 @@
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23px;
+  height: 23px;
+  background-color: rgb(165, 210, 255);
+  margin: 2px;
+  user-select: none;
+}
+
+.close {
+  background-color: rgb(165, 210, 255);
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: rgb(148, 190, 231);
+}
+
+.open {
+  background-color: rgb(233, 245, 255);
+  cursor: default;
+}
+
+.bomb {
+  width: 23px;
+  height: 23px;
+}
+
+@media screen and (max-width: 767px), (max-height: 930px) {
+  .square {
+    width: 18px;
+    height: 18px;
+    font-size: 16px;
+  }
+
+  .bomb {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (max-width: 570px), (max-height: 790px) {
+  .square {
+    width: 12px;
+    height: 12px;
+    margin: 1px;
+    font-size: 10px;
+  }
+
+  .bomb {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media screen and (max-width: 360px), (max-height: 680px) {
+  .square {
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+  }
+
+  .bomb {
+    width: 10px;
+    height: 10px;
+  }
+}

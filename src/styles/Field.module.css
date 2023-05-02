@@ -1,0 +1,40 @@
+.row {
+  display: flex;
+}
+
+.field {
+  position: relative;
+  padding: 2px;
+  border: 4px rgb(165, 210, 255) solid;
+}
+
+.popUp {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin-left: -2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  background: radial-gradient(
+    rgba(255, 255, 255, 0.8) 20%,
+    rgba(165, 210, 255, 0.5) 100%
+  );
+}
+
+.popUp h1 {
+  color: rgb(61, 40, 40);
+}
+
+@media screen and (max-width: 570px), (max-height: 790px) {
+  .field {
+    padding: 1px;
+  }
+  .popUp {
+    margin-left: -1px;
+  }
+  .popUp h1 {
+    font-size: 20px;
+  }
+}
